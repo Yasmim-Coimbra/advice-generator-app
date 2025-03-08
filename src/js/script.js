@@ -21,3 +21,6 @@ async function displayAdvice() {
 	adviceText.innerText = returnedAdvice;
 	adviceId.innerText = returnedAdviceId;
 }
+displayAdvice();
+
+button.addEventListener("click", displayAdvice);
