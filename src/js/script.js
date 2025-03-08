@@ -7,7 +7,7 @@ async function generateRandomAdvice() {
 
 	try {
 		const response = await fetch(url);
-        return await response.json();
+		return await response.json();
 	} catch (error) {
 		throw new Error("It was not possible to generate a random advice");
 	}
