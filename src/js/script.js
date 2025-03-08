@@ -12,3 +12,12 @@ async function generateRandomAdvice() {
 		throw new Error("It was not possible to generate a random advice");
 	}
 }
+
+async function displayAdvice() {
+	const advice = await generateRandomAdvice();
+	const returnedAdvice = advice.slip.advice;
+	const returnedAdviceId = advice.slip.id;
+
+	adviceText.innerText = returnedAdvice;
+	adviceId.innerText = returnedAdviceId;
+}
