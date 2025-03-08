@@ -1,0 +1,57 @@
+body {
+    background-color: hsl(218, 23%, 16%);
+    color: hsl(193, 38%, 86%);
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    height: 100dvh;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    max-width: 450px;
+    padding-inline: 10px;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 11px;
+    text-align: center;
+    margin-inline: 15px;
+}
+
+picture img {
+    width: 85%;
+}
+
+.advice-number {
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+    margin: 35px 0 25px;
+    letter-spacing: 4px;
+}
+
+.advice-text {
+    font-size: 18px;
+    max-width: 350px;
+    padding-inline: 8px;
+    margin-bottom: 25px;
+    line-height: 150%;
+}
+
+.generator-button {
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 40px;
+    width: 65px;
+    height: 65px;
+    transform: translateY(30px);
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 0 35px hsl(150, 100%, 66%);
+    }
+}
